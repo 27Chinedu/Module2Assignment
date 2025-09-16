@@ -53,7 +53,7 @@ def test_division_negative():
     assert division(-6, 3) == -2
 
 
-def test_division_by_zero():
+def test_division_negative():
     """Test division by zero."""
     with pytest.raises(ZeroDivisionError):
         division(1, 0)
