@@ -42,7 +42,8 @@ def division(a: float, b: float) -> float:
     Example: if we call division(10.0, 2.0), it will return 5.0.
     But if we call division(10.0, 0.0), it will raise a ValueError and say "Division by zero is not allowed."
     """
+    def division(a, b):
+    """Divides a by b, raising an error if b is zero."""
     if b == 0:
-        # This part checks if 'b' is zero. If it is, we raise an error and stop the function.
-        if b == 0:
-            raise ZeroDivisionError("Division by zero is not allowed.")
+        raise ZeroDivisionError("Division by zero is not allowed.")
+    return a / b 
